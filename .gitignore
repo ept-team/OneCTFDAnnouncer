@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Env
+.env
+.env.*
+
+# SQLite DB
+onectfdannouncer/state.db
+state.db
+# VSCode
+.vscode/
+
+# Docker
+*.log
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.swp
+*.swo
