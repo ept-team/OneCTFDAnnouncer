@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - bot_data:/app/data
+      # Alternative: bind mount for development
+      # - ./data:/app/data
+    restart: unless-stopped
+
+volumes:
+  bot_data:

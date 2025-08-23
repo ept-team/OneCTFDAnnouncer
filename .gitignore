@@ -4,27 +4,71 @@ __pycache__/
 *.pyo
 *.pyd
 *.pyc
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Env
+# Virtual environments
 .env
 .env.*
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# uv
+uv.lock
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
 # SQLite DB
 onectfdannouncer/state.db
 state.db
+data/
+
 # VSCode
 .vscode/
 
+# IDEs
+.idea/
+*.swp
+*.swo
+*~
+
 # Docker
 *.log
-dist/
-build/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Misc
-*.swp
-*.swo
-*.egg-info/
+*.bak
+*.tmp

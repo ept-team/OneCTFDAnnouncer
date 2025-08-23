@@ -1,0 +1,15 @@
+[project]
+name = "onectfdannouncer"
+version = "0.1.0"
+description = "Discord bot for CTFd first blood announcements and top 10 teams."
+authors = [{ name = "Claude Sonnet 4", email = "ai@claude.ai" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "discord.py",
+    "requests",
+    "python-dotenv"
+]
+
+[tool.uv]
+# uv-specific config can go here
