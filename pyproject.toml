@@ -1,6 +1,6 @@
 [project]
 name = "onectfdannouncer"
-version = "1.0.0"
+version = "1.0.1"
 description = "Discord bot for CTFd first blood announcements and top 10 teams."
 authors = [{ name = "Claude Sonnet 4", email = "ai@claude.ai" }]
 readme = "README.md"
