@@ -56,8 +56,15 @@ def register_tasks(bot):
             )
 
             for chal in unannnounced_challenges:
+                # Check if challenge has any solves first (optimization)
+                solve_count = chal.get("solves", 0)
+                if solve_count == 0:
+                    logger.debug(
+                        f"Skipping challenge '{chal['name']}' ({chal['id']}) - no solves yet"
+                    )
+                    continue
                 logger.debug(
-                    f"Checking solves for challenge '{chal['name']}' ({chal['id']})"
+                    f"Checking solves for challenge '{chal['name']}' ({chal['id']}) - {solve_count} solves"
                 )
                 solves = ctfd.get_solves(chal["id"])
                 if solves:
@@ -77,6 +84,7 @@ def register_tasks(bot):
                     logger.info(
                         f"Announced first blood for challenge '{chal['name']}' by team '{first['name']}'"
                     )
+
         except Exception as e:
             logger.error(f"Error in poll_first_bloods task: {e}")
 
